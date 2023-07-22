@@ -8,7 +8,7 @@ export const MainPage: React.FC = () => {
     return(
         <>
             <ViewImage/>
-            <div>
+            <div className="col-2">
                 <AboutMe />
                 <Projects />
             </div>
