@@ -1,6 +1,4 @@
-import { useEffect, useRef, useState } from "react"
 import { useAppSelector } from "../../../app/hooks"
-import { CSSTransition } from 'react-transition-group'
 import { ImageTitle } from "../../../shared/imageTitle"
 
 

@@ -2,7 +2,7 @@ import { ProjectInfo } from "../entities/projectInfo"
 import { useAppDispatch, useAppSelector } from "../app/hooks"
 import ProjectItemHeader from "../entities/projectItemHeader";
 
-import React, { useCallback, useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import { ViewProjectSlice } from "../widgets/model/slice";
 
 interface ProjectItemProps {
@@ -24,7 +24,7 @@ const ProjectItem: React.FC<ProjectItemProps> = ({item}) => {
 
     const [color, setColor] = useState('#000')
 
-    const onHoverEnter = (back: string) => {
+    const onHoverEnter = () => {
         dispatch(ViewProjectSlice.actions.mouseEnter({background: item.background, title: item.title}))
         setColor(item.background)
     }
@@ -36,7 +36,7 @@ const ProjectItem: React.FC<ProjectItemProps> = ({item}) => {
 
     return(
         <>
-        <div className="project" onMouseEnter={() => onHoverEnter(item.background)} onMouseLeave={() => onHoverLeave()}>
+        <div className="project" onMouseEnter={() => onHoverEnter()} onMouseLeave={() => onHoverLeave()}>
             <ProjectItemHeader project={item} color={color}/>
             {activeProject === item.id && <ProjectInfo info={item.info}/>}
         </div>

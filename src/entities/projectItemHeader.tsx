@@ -1,7 +1,7 @@
 import HtmlIcon from '@mui/icons-material/Html';
 import CssIcon from '@mui/icons-material/Css';
 import { useAppDispatch, useAppSelector } from '../app/hooks';
-import { useEffect, useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 import { ViewProjectSlice } from '../widgets/model/slice';
 import React from 'react'
 
