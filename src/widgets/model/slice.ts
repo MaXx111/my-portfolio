@@ -4,7 +4,11 @@ interface initialStateProps {
     projects: [{
         title: string
     }],
-    activeColor: string,
+    hoverProject: {
+        background: string,
+        title: string,
+        allow: boolean
+    },
     activeProject: number | boolean
 }
 
@@ -12,7 +16,11 @@ const initialState: initialStateProps = {
     projects: [{
         title: "k"
     }],
-    activeColor: "#000",
+    hoverProject: {
+        background: "#000",
+        title: 'Hello',
+        allow: false
+    },
     activeProject: false
 }
 
@@ -24,11 +32,13 @@ export const ViewProjectSlice = createSlice({
             state.activeProject = action.payload
         },
         mouseEnter(state, action) {
-            state.activeColor = action.payload
+            state.hoverProject.background = action.payload.background
+            state.hoverProject.title = action.payload.title
+            state.hoverProject.allow = true
 
         },
         mouseLeave(state) {
-            state.activeColor = "#000"
+            state.hoverProject = initialState.hoverProject
         }
     }
 })

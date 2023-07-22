@@ -27,7 +27,7 @@ const ProjectItemHeader: React.FC<ProjectItemHeaderProps> = ({project, color}) =
         }
 
         if(activeProject !== id) {
-            dispatch(ViewProjectSlice.actions.clickOnProject(id))
+            dispatch(ViewProjectSlice.actions.clickOnProject(project.id))
 
             myRef.current?.scrollIntoView({ 
                 behavior: 'smooth',

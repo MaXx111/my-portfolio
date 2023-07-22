@@ -25,7 +25,7 @@ const ProjectItem: React.FC<ProjectItemProps> = ({item}) => {
     const [color, setColor] = useState('#000')
 
     const onHoverEnter = (back: string) => {
-        dispatch(ViewProjectSlice.actions.mouseEnter(back))
+        dispatch(ViewProjectSlice.actions.mouseEnter({background: item.background, title: item.title}))
         setColor(item.background)
     }
 
