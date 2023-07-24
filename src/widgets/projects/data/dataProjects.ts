@@ -1,9 +1,12 @@
-export const data = [
+import { ProjectProps } from "../../model/type";
+
+export const data: ProjectProps[] = [
     {
         id: 1,
-        title: "CRAB",
+        title: "MQ-MAKET",
         info: "jnbjkbkbjbk",
-        background: '#d10073',
+        bgImg: './mq-maket.png',
+        colorTitle: 'blue',
         technologies: {
             html: true,
             css: true
@@ -13,7 +16,8 @@ export const data = [
         id: 2,
         title: "PETS",
         info: "jnbjkbkbjbk",
-        background: '#0015d1',
+        bgImg: '#0015d1',
+        colorTitle: 'blue',
         technologies: {
             html: true,
             css: false
@@ -23,7 +27,8 @@ export const data = [
         id: 3,
         title: "GG",
         info: "jnbjkbkbjbk",
-        background: '#d10d00',
+        bgImg: '#d10d00',
+        colorTitle: 'blue',
         technologies: {
             html: false,
             css: true
@@ -33,59 +38,10 @@ export const data = [
         id: 4,
         title: "CRAB",
         info: "jnbjkbkbjbk",
-        background: '#d10073',
+        bgImg: '#d10073',
+        colorTitle: 'blue',
         technologies: {
             html: true,
-            css: true
-        }
-    },
-    {
-        id: 5,
-        title: "PETS",
-        info: "jnbjkbkbjbk",
-        background: '#0015d1',
-        technologies: {
-            html: true,
-            css: false
-        }
-    },
-    {
-        id: 6,
-        title: "GG",
-        info: "jnbjkbkbjbk",
-        background: '#d10d00',
-        technologies: {
-            html: false,
-            css: true
-        }
-    },
-    {
-        id: 7,
-        title: "CRAB",
-        info: "jnbjkbkbjbk",
-        background: '#d10073',
-        technologies: {
-            html: true,
-            css: true
-        }
-    },
-    {
-        id: 8,
-        title: "PETS",
-        info: "jnbjkbkbjbk",
-        background: '#0015d1',
-        technologies: {
-            html: true,
-            css: false
-        }
-    },
-    {
-        id: 9,
-        title: "GG",
-        info: "jnbjkbkbjbk",
-        background: '#d10d00',
-        technologies: {
-            html: false,
             css: true
         }
     }

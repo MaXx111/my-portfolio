@@ -4,17 +4,10 @@ import ProjectItemHeader from "../entities/projectItemHeader";
 
 import React, { useState } from 'react'
 import { ViewProjectSlice } from "../widgets/model/slice";
+import { ProjectProps } from "../widgets/model/type";
 
 interface ProjectItemProps {
-    item: {
-        title: string,
-        info: string,
-        background: string,
-        technologies: {
-            html: boolean
-        },
-        id: number
-    }, 
+    item: ProjectProps
 }
 
 const ProjectItem: React.FC<ProjectItemProps> = ({item}) => {
@@ -24,13 +17,19 @@ const ProjectItem: React.FC<ProjectItemProps> = ({item}) => {
 
     const [color, setColor] = useState('#000')
 
+    const hoverProject = {
+        bgImg: "./Снимок экрана 2023-07-22 в 19.13.57.png",
+        title: '',
+        allow: false
+    }
+
     const onHoverEnter = () => {
-        dispatch(ViewProjectSlice.actions.mouseEnter({background: item.background, title: item.title}))
-        setColor(item.background)
+        dispatch(ViewProjectSlice.actions.mouseEnter({bgImg: item.bgImg, title: item.title}))
+        setColor(item.colorTitle)
     }
 
     const onHoverLeave = () => {
-        dispatch(ViewProjectSlice.actions.mouseLeave())
+        dispatch(ViewProjectSlice.actions.mouseLeave(hoverProject))
         setColor('#000')
     }
 

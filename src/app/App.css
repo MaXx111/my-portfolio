@@ -1,3 +1,7 @@
+body {
+  margin: 0;
+}
+
 #root {
   display: flex;
 }
@@ -9,10 +13,9 @@
   height: 100vh;
   padding: 4vw;
   display: flex;
-  background: #0000EE;
-  color: #fff;
   text-align: center;
   transition-duration: 2s;
+  
 }
 
 .col-2 {
@@ -66,8 +69,10 @@
 
 .view-project_title {
   position: absolute;
-  font-size: 5rem;
+  font-size: 40px;
   animation: myAnim 2s ease 0s 1 normal forwards;
+  background-color: mistyrose;
+  background-attachment: initial;
 }
 
 @keyframes myAnim {
@@ -76,6 +81,27 @@
 	}
 
 	100% {
-		transform: translateX(100px);
+		transform: translateX(10px);
 	}
+}
+
+@keyframes imgAnim {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+
+
+.viewImg {
+  position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+    animation: imgAnim 2s ease 0s 1 normal forwards;
 }
