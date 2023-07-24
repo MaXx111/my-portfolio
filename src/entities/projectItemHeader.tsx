@@ -1,7 +1,14 @@
 import HtmlIcon from '@mui/icons-material/Html';
 import CssIcon from '@mui/icons-material/Css';
+import JavascriptIcon from '@mui/icons-material/Javascript';
+
+import { FaReact } from 'react-icons/fa'
+import { BiLogoTypescript } from 'react-icons/bi'
+import { SiRedux } from 'react-icons/si'
+import { DiJavascript1 } from 'react-icons/di'
+
 import { useAppDispatch, useAppSelector } from '../app/hooks';
-import { useRef, useState } from 'react';
+import { useState } from 'react';
 import { ViewProjectSlice } from '../widgets/model/slice';
 import React from 'react'
 
@@ -17,8 +24,6 @@ const ProjectItemHeader: React.FC<ProjectItemHeaderProps> = ({project, color}) =
     const {activeProject} = useAppSelector(state => state.ViewProjectReducer)
 
     const [cursor, setCursor] = useState('auto')
-
-    const myRef = useRef<HTMLDivElement>(null)
    
     const clickHandler = (id: number) => {
         if(activeProject == id) {
@@ -28,11 +33,6 @@ const ProjectItemHeader: React.FC<ProjectItemHeaderProps> = ({project, color}) =
 
         if(activeProject !== id) {
             dispatch(ViewProjectSlice.actions.clickOnProject(project.id))
-
-            myRef.current?.scrollIntoView({ 
-                behavior: 'smooth',
-                block: 'start'
-            });
         }
     }
 
@@ -47,15 +47,18 @@ const ProjectItemHeader: React.FC<ProjectItemHeaderProps> = ({project, color}) =
     return(
         <>
             <div className="project-header" style={{color: color, cursor: cursor}} 
-            ref={myRef} 
             onClick={() => clickHandler(project.id)}
             onMouseEnter={() => enterHandler()}
             onMouseLeave={() => leaveHandler()}
             >
-                <p className="project-header_title">{project.title}</p>
+                <h3 className="project-header_title">{project.title}</h3>
                 <ul className="project-header_technologies">
                     {project.technologies.html &&  <HtmlIcon />}
                     {project.technologies.css &&  <CssIcon />}
+                    {project.technologies.react && <FaReact />}
+                    {project.technologies.ts && <BiLogoTypescript />}
+                    {project.technologies.redux && <SiRedux />}
+                    {project.technologies.js && <DiJavascript1 />}
                 </ul>
             </div>
         </>

@@ -3,46 +3,78 @@ import { ProjectProps } from "../../model/type";
 export const data: ProjectProps[] = [
     {
         id: 1,
-        title: "MQ-MAKET",
-        info: "jnbjkbkbjbk",
+        title: "NOEMI",
+        info: {
+            description: 'qrvq',
+            deploy: 'https://maxx111.github.io/mq-diplom37/?#',
+            code: 'https://github.com/MaXx111/mq-diplom37'
+        },
         bgImg: './mq-maket.png',
-        colorTitle: 'blue',
+        colorTitle: '#cc6633',
         technologies: {
             html: true,
-            css: true
+            css: true,
+            react: true,
+            js: true,
+            ts: true,
+            redux: true
         }
     },
     {
         id: 2,
         title: "PETS",
-        info: "jnbjkbkbjbk",
+        info: {
+            description: '',
+            deploy: 'https://maxx111.github.io/mq-diplom37/?#',
+            code: 'https://github.com/MaXx111/mq-diplom37'
+        },
         bgImg: '#0015d1',
         colorTitle: 'blue',
         technologies: {
             html: true,
-            css: false
+            css: true,
+            react: true,
+            js: true,
+            ts: true,
+            redux: true
         }
     },
     {
         id: 3,
         title: "GG",
-        info: "jnbjkbkbjbk",
+        info: {
+            description: '',
+            deploy: 'https://maxx111.github.io/mq-diplom37/?#',
+            code: 'https://github.com/MaXx111/mq-diplom37'
+        },
         bgImg: '#d10d00',
         colorTitle: 'blue',
         technologies: {
-            html: false,
-            css: true
+            html: true,
+            css: true,
+            react: true,
+            js: true,
+            ts: true,
+            redux: true
         }
     },
     {
         id: 4,
         title: "CRAB",
-        info: "jnbjkbkbjbk",
+        info: {
+            description: '',
+            deploy: 'https://maxx111.github.io/mq-diplom37/?#',
+            code: 'https://github.com/MaXx111/mq-diplom37'
+        },
         bgImg: '#d10073',
         colorTitle: 'blue',
         technologies: {
             html: true,
-            css: true
+            css: true,
+            react: true,
+            js: true,
+            ts: true,
+            redux: true
         }
     }
 ]

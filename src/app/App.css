@@ -20,7 +20,7 @@ body {
 
 .col-2 {
   width: 50%;
-  min-height: 150vh;
+  min-height: 100vh;
   padding: 4vw 4vw 0;
 }
 
@@ -32,7 +32,7 @@ body {
   justify-content: space-between;
   position: sticky;
   top: 0;
-  padding: 25px 0;
+  padding: 15px 0;
   border-bottom: 1px solid #000;
   background: #fff;
   z-index: 101;
@@ -43,7 +43,7 @@ body {
 }
 
 .project {
-  border-bottom: 5px dashed green;
+  border-bottom: 2px dashed grey;
   
 }
 
@@ -51,15 +51,16 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 20px;
 }
 
 .project-header_title {
-
+  font-weight: normal;
 }
 
 .project-header_technologies {
   padding: 0 0 0 10px;
+  display: flex;
+  align-items: center;
 }
 
 
@@ -69,18 +70,22 @@ body {
 
 .view-project_title {
   position: absolute;
-  font-size: 40px;
-  animation: myAnim 2s ease 0s 1 normal forwards;
+  top: 10%;
+  left: 10%;
+  font-size: 90px;
+  animation: myAnim 1s ease 0s 1 normal forwards;
   background-color: mistyrose;
   background-attachment: initial;
 }
 
 @keyframes myAnim {
 	0% {
+    opacity: 0;
 		transform: translateX(0);
 	}
 
 	100% {
+    opacity: 1;
 		transform: translateX(10px);
 	}
 }
@@ -103,5 +108,37 @@ body {
     left: 0;
     z-index: 0;
     width: 100%;
+    min-height: 100vh;
     animation: imgAnim 2s ease 0s 1 normal forwards;
 }
+
+
+
+
+.info-links {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list-item {
+  display: flex;
+  margin: 10px 0 0 0;
+}
+
+.info-description {
+  margin: 0;
+  padding: 0 0 0 30px;
+}
+
+.list-item-link {
+  text-decoration: none;
+  color: #000;
+}
+
+.bold {
+  font-weight: bold;
+  display: block;
+  padding: 0 10px 0 0;
+}
+

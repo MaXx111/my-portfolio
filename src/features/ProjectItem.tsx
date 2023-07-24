@@ -37,7 +37,7 @@ const ProjectItem: React.FC<ProjectItemProps> = ({item}) => {
         <>
         <div className="project" onMouseEnter={() => onHoverEnter()} onMouseLeave={() => onHoverLeave()}>
             <ProjectItemHeader project={item} color={color}/>
-            {activeProject === item.id && <ProjectInfo info={item.info}/>}
+            {activeProject === item.id && <ProjectInfo info={item.info} color={item.colorTitle}/>}
         </div>
         </>
     )
