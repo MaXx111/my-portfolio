@@ -2,7 +2,7 @@ import { ProjectInfo } from "../entities/projectInfo"
 import { useAppDispatch, useAppSelector } from "../app/hooks"
 import ProjectItemHeader from "../entities/projectItemHeader";
 
-import React, { useState } from 'react'
+import React, { useCallback, useEffect, useState } from 'react'
 import { ViewProjectSlice } from "../widgets/model/slice";
 import { ProjectProps } from "../widgets/model/type";
 
@@ -11,27 +11,41 @@ interface ProjectItemProps {
 }
 
 const ProjectItem: React.FC<ProjectItemProps> = ({item}) => {
-    const {activeProject} = useAppSelector(state => state.ViewProjectReducer)
+    const {activeProject, hoverProject} = useAppSelector(state => state.ViewProjectReducer)
 
     const dispatch = useAppDispatch();
 
     const [color, setColor] = useState('#000')
 
-    const hoverProject = {
+    const initialHoverProject = {
         bgImg: "./Снимок экрана 2023-07-22 в 19.13.57.png",
         title: '',
+        color: '#000',
+        id: 0,
         allow: false
     }
 
     const onHoverEnter = () => {
-        dispatch(ViewProjectSlice.actions.mouseEnter({bgImg: item.bgImg, title: item.title}))
-        setColor(item.colorTitle)
+        const hoverPrj = {
+            bgImg: item.bgImg, 
+            title: item.title, 
+            color: item.colorTitle, 
+            id: item.id
+        }
+        dispatch(ViewProjectSlice.actions.mouseEnter(hoverPrj))
     }
 
     const onHoverLeave = () => {
-        dispatch(ViewProjectSlice.actions.mouseLeave(hoverProject))
-        setColor('#000')
+        dispatch(ViewProjectSlice.actions.mouseLeave(initialHoverProject))
     }
+
+    useEffect(()=> {
+        if(item.id == hoverProject.id) {
+            setColor(hoverProject.color)
+        } else {
+            setColor('#000')
+        }
+    }, [hoverProject])
 
     return(
         <>

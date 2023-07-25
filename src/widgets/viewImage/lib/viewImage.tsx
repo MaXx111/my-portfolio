@@ -1,5 +1,6 @@
 import { useAppSelector } from "../../../app/hooks"
-import { ImageTitle } from "../../../shared/imageTitle"
+import { data } from "../../projects/data/dataProjects"
+import { ViewItem } from "./viewItem"
 
 
 export const ViewImage: React.FC = () => {
@@ -8,9 +9,11 @@ export const ViewImage: React.FC = () => {
 
     return(
         <>
-            <div className="col-1" style={{backgroundColor: '#000'}}>
-                {hoverProject.allow && <img src={`${hoverProject.bgImg}`} alt="" className="viewImg"/>}
-                {hoverProject.allow && <ImageTitle />}
+            <div className="col-1" style={{backgroundColor: 'mistyrose'}}>
+                {hoverProject.allow && <div style={{backgroundImage: `url(${hoverProject.bgImg})`}}className="viewImg"></div>}
+                <div className="view-items">
+                    {data.map(item => <ViewItem key={item.id} item={item}/>)}
+                </div>
             </div>
         </>
     )
