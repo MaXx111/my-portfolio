@@ -157,3 +157,29 @@ body {
   transition-duration: 0.5s;
   border-radius: 15px;
 }
+
+@media (max-width: 910px) {
+
+  #root {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .col-1 {
+    width: 100%;
+    height: 30%;
+  }
+
+  .viewImg {
+    min-height: 100%;
+  }
+
+  .col-2 {
+    width: 80%;
+    min-height: 70%;
+  }
+
+  .projects-header {
+    top: 267px;
+  }
+}
