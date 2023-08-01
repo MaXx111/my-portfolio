@@ -158,6 +158,63 @@ body {
   border-radius: 15px;
 }
 
+.about-me_title {
+  margin: 0;
+}
+
+.total_info {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0 0 0;
+}
+
+.total {
+  position: absolute;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  font-size: 11px;
+  padding: 0 5px 0 0;
+  top: 13px;
+  left: -26px;
+}
+
+.total:before {
+  content: "";
+  border: 1px solid #000;
+  width: 20px;
+  height: 20px;
+  display: block;
+  position: absolute;
+  top: -4px;
+  left: 0px;
+  border-radius: 100px;
+}
+
+.total-link {
+  text-decoration: none;
+  color: rgb(187, 169, 167);
+  font-weight: bold;
+}
+
+.total-link:hover {
+  color: mistyrose;
+}
+
+.total-link:active {
+  color: rgb(187, 169, 167);
+}
+
+.total_text {
+  padding: 0 0 5px 0;
+}
+
+.text-end {
+  text-align: end;
+}
+
 @media (max-width: 910px) {
 
   #root {
