@@ -1,15 +1,14 @@
 import HtmlIcon from '@mui/icons-material/Html';
 import CssIcon from '@mui/icons-material/Css';
-import JavascriptIcon from '@mui/icons-material/Javascript';
 
 import { FaReact } from 'react-icons/fa'
 import { BiLogoTypescript } from 'react-icons/bi'
 import { SiRedux } from 'react-icons/si'
 import { DiJavascript1 } from 'react-icons/di'
 
-import { useAppDispatch, useAppSelector } from '../app/hooks';
+import { useAppDispatch, useAppSelector } from '../../../app/hooks';
 import { useState } from 'react';
-import { ViewProjectSlice } from '../widgets/model/slice';
+import { ViewProjectSlice } from '../../model/slice';
 import React from 'react'
 
 interface ProjectItemHeaderProps {

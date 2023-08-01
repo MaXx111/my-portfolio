@@ -1,5 +1,4 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { ProjectProps } from "./type";
 
 interface initialStateProps {
     hoverProject: {
@@ -38,7 +37,6 @@ export const ViewProjectSlice = createSlice({
             state.hoverProject.allow = true
         },
         mouseLeave(state, action) {
-            console.log(`j`)
             state.hoverProject.bgImg = action.payload.bgImg,
             state.hoverProject.title = action.payload.title,
             state.hoverProject.color = action.payload.color

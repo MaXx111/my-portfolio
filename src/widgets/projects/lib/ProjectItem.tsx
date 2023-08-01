@@ -1,10 +1,10 @@
-import { ProjectInfo } from "../entities/projectInfo"
-import { useAppDispatch, useAppSelector } from "../app/hooks"
-import ProjectItemHeader from "../entities/projectItemHeader";
+import { ProjectInfo } from "./projectInfo"
+import { useAppDispatch, useAppSelector } from "../../../app/hooks"
+import ProjectItemHeader from "./projectItemHeader";
 
-import React, { useCallback, useEffect, useState } from 'react'
-import { ViewProjectSlice } from "../widgets/model/slice";
-import { ProjectProps } from "../widgets/model/type";
+import React, { useEffect, useState } from 'react'
+import { ViewProjectSlice } from "../../model/slice";
+import { ProjectProps } from "../../model/type";
 
 interface ProjectItemProps {
     item: ProjectProps

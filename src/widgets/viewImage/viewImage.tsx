@@ -1,6 +1,6 @@
-import { useAppSelector } from "../../../app/hooks"
-import { data } from "../../projects/data/dataProjects"
-import { ViewItem } from "./viewItem"
+import { useAppSelector } from "../../app/hooks"
+import { data } from "../../data/dataProjects"
+import { ViewItem } from "./lib/viewItem"
 
 
 export const ViewImage: React.FC = () => {

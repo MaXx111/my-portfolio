@@ -1,6 +1,3 @@
-import { CodeLinkItem } from "../shared/codeLinkItem"
-import { DeployItem } from "../shared/deployItem"
-import { ProjectProps } from "../widgets/model/type"
 
 interface ProjectInfoProps {
     info: {
@@ -18,8 +15,12 @@ export const ProjectInfo: React.FC<ProjectInfoProps> = ({info, color}) => {
                 <div className="info">
                     <p className="info-description">{info.description}</p>
                     <ul className="info-links">
-                        <DeployItem link={info.deploy} color={color}/>
-                        <CodeLinkItem link={info.code} color={color}/>
+                        <li className="list-item">
+                            <a href={info.deploy} className="list-item-link"><span style={{color: color}}>Deploy</span></a>
+                        </li>
+                        <li className="list-item">
+                            <a href={info.code} className="list-item-link"><span style={{color: color}}>Code:</span></a>
+                        </li>
                     </ul>
                 </div>
             </>
