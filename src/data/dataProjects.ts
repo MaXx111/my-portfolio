@@ -5,9 +5,9 @@ export const data: ProjectProps[] = [
         id: 11,
         title: "Shoes shop",
         info: {
-            description: ['Интернет-магазин обуви, в котором реализованны функции: поиск по названию товара, выбор размера, количество единиц товара и удаление из корзины',
+            description: ['Интернет-магазин обуви, в котором реализованы функции: поиск по названию товара, выбор размера, количество единиц товара и удаление из корзины',
                             'В данном проекте я использовал такие технологии как: Redux-toolkit, Redux-persist, TypeScript, сборщик Vite, axios',
-                            'Так же используется архитикта feature-Sliced Design для данного проекта'],
+                            'Так же используется архитиктура Feature-Sliced Design для данного проекта'],
             deploy: 'https://maxx111.github.io/shoes_shop/',
             code: 'https://github.com/MaXx111/shoes_shop'
         },
@@ -46,9 +46,9 @@ export const data: ProjectProps[] = [
         id: 9,
         title: "Cozy House",
         info: {
-            description: ['Моя работа для RSS, где было необходимо сверстать сайт для приюта животных только на HTML и СSS', 
+            description: ['Моя работа для RSS, где было необходимо сверстать сайт для приюта животных только на HTML, СSS и JS', 
                         'Так как в ТЗ было указанно использовать только верстку и ванильный JS, то интересных технологий в данном проекте попробовать не удалось',
-                        'Реализованно переключение страниц, карусель и открытие карточек с животными. Дизайн адаптивный и отображается хорошо на всех устройствах'],
+                        'Реализовано переключение страниц, карусель и открытие карточек с животными. Дизайн адаптивный и отображается хорошо на всех устройствах'],
             deploy: 'https://maxx111.github.io/shelter_pets-site/',
             code: 'https://github.com/MaXx111/shelter_pets-site'
         },
@@ -107,8 +107,8 @@ export const data: ProjectProps[] = [
         id: 6,
         title: "Каталог фотографий",
         info: {
-            description: ['Пример каталога на react, где можно выбирать фотографии по категории', 
-                            'Реализован на React, колекция фотографий маленькая, сделанно как пример работы'],
+            description: ['Пример каталога на React, где можно выбирать фотографии по категории', 
+                            'Реализован на React, коллекция фотографий маленькая, сделано как пример работы'],
             deploy: 'https://maxx111.github.io/events-state__filter/',
             code: 'https://github.com/MaXx111/events-state__filter'
         },
@@ -128,7 +128,7 @@ export const data: ProjectProps[] = [
         title: "Minesweeper",
         info: {
             description: ['Minesweeper или Сапер. Как пример роста кода по сравнению с Retro game', 
-                            'Используетс обычный JS, HTML, CSS, так же используются рекурсивные функции'],
+                            'Используется обычный JS, HTML, CSS, так же используются рекурсивные функции'],
             deploy: 'https://maxx111.github.io/Minesweeper/',
             code: 'https://github.com/MaXx111/Minesweeper'
         },
