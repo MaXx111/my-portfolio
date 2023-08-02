@@ -87,7 +87,8 @@ export const data: ProjectProps[] = [
         id: 5,
         title: "Виртуальная клавиатура",
         info: {
-            description: ['Виртуальная клавиатура реализована только на английском языке'],
+            description: ['Задание на курсе Rolling Stone School, выполнено на ванильном JS с использованием HTML и CSS',
+                            'Клавиатура реализована только на английском языке'],
             deploy: 'https://maxx111.github.io/virtual-keyboard/',
             code: 'https://github.com/MaXx111/virtual-keyboard'
         },
@@ -104,9 +105,10 @@ export const data: ProjectProps[] = [
     },
     {
         id: 6,
-        title: "Catalog на React",
+        title: "Каталог фотографий",
         info: {
-            description: ['Моя первая работа на react'],
+            description: ['Пример каталога на react, где можно выбирать фотографии по категории', 
+                            'Реализован на React, колекция фотографий маленькая, сделанно как пример работы'],
             deploy: 'https://maxx111.github.io/events-state__filter/',
             code: 'https://github.com/MaXx111/events-state__filter'
         },
@@ -125,7 +127,8 @@ export const data: ProjectProps[] = [
         id: 10,
         title: "Minesweeper",
         info: {
-            description: ['Последняя работа(игра)'],
+            description: ['Minesweeper или Сапер. Как пример роста кода по сравнению с Retro game', 
+                            'Используетс обычный JS, HTML, CSS, так же используются рекурсивные функции'],
             deploy: 'https://maxx111.github.io/Minesweeper/',
             code: 'https://github.com/MaXx111/Minesweeper'
         },
@@ -144,7 +147,7 @@ export const data: ProjectProps[] = [
         id: 1,
         title: "NOEMI",
         info: {
-            description: ['Обычная верстка по макету без интерактива'],
+            description: ['Обычная одностраничная верстка по макету без интерактива'],
             deploy: 'https://maxx111.github.io/mq-diplom37/?#',
             code: 'https://github.com/MaXx111/mq-diplom37'
         },
@@ -163,7 +166,7 @@ export const data: ProjectProps[] = [
         id: 3,
         title: "Plants site",
         info: {
-            description: ['Обычная верстка, но и даже без адаптива'],
+            description: ['Обычная одностраничная верстка по макету без интерактива'],
             deploy: 'https://maxx111.github.io/plants_site/#',
             code: 'https://github.com/MaXx111/plants_site'
         },
@@ -174,25 +177,6 @@ export const data: ProjectProps[] = [
             css: true,
             react: false,
             js: false,
-            ts: false,
-            redux: false
-        }
-    },
-    {
-        id: 4,
-        title: "Маленькая игра",
-        info: {
-            description: ['Обычная старая маленькая игра, где нужно попасть по цели'],
-            deploy: 'https://maxx111.github.io/events-1-dz/',
-            code: 'https://github.com/MaXx111/events-1-dz'
-        },
-        bgImg: './mini-game.png',
-        colorTitle: '#a64d79',
-        technologies: {
-            html: true,
-            css: true,
-            react: false,
-            js: true,
             ts: false,
             redux: false
         }

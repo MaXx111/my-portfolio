@@ -14,7 +14,7 @@ export const ProjectInfo: React.FC<ProjectInfoProps> = ({info, color}) => {
     return(
             <>
                 <div className="info">
-                    {info.description.map(item => <DescriptionItem description={item}/>)}
+                    {info.description.map((item, index) => <DescriptionItem key={index} description={item}/>)}
                     <ul className="info-links">
                         <li className="list-item">
                             <span className='list-item-txt Raleway-regular'>Ссылка на 

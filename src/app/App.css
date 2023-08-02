@@ -162,6 +162,14 @@ body {
   text-decoration: none;
 }
 
+.list-item-link:hover {
+  opacity: 0.5;
+}
+
+.list-item-link:active {
+  opacity: 1;
+}
+
 .bold {
   font-weight: bold;
   display: block;
@@ -185,6 +193,7 @@ body {
 
 .about-me_title {
   margin: 0;
+  font-size: 28px;
 }
 
 .total_info {
@@ -234,6 +243,7 @@ body {
 
 .total_text {
   padding: 0 0 5px 0;
+  font-size: 12px;
 }
 
 .text-end {
