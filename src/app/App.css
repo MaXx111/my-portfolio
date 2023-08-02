@@ -197,11 +197,9 @@ body {
 }
 
 .total_info {
-  position: relative;
   display: flex;
   flex-direction: column;
   padding: 10px 0 0 0;
-  z-index: -1;
 }
 
 .total {
@@ -273,6 +271,7 @@ body {
   }
 
   .projects-header {
-    top: 293px;
+    top: 310px;
+    padding: 20px 0;
   }
 }

@@ -11,10 +11,9 @@ export const AboutMe: React.FC = () => {
                 <span>---</span>
                     <br/>
                 <div className="total_info">
-                    <span className="total Menlo-regular">{data.length}</span>
-                    <span className="total_text Menlo-regular">Проектов в портфолио</span>
+                    <span className="total_text Menlo-regular">Проектов в портфолио - {data.length}</span>
                     <span className="total_text Menlo-regular">Последнее обновление 1 августа 2023 года</span>
-                    <span className="total_text text-end Menlo-regular">Подготовлено <a href="" className="total-link">Максимом Сидоровым</a></span>
+                    <span className="total_text text-end Menlo-regular">Подготовлено <a href="https://github.com/MaXx111" className="total-link">Максимом Сидоровым</a></span>
                 </div>
             </div>  
         </>
