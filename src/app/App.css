@@ -271,7 +271,7 @@ body {
   }
 
   .projects-header {
-    top: 310px;
     padding: 20px 0;
+    z-index: -1;
   }
 }
