@@ -5,7 +5,9 @@ export const data: ProjectProps[] = [
         id: 11,
         title: "Shoes shop",
         info: {
-            description: 'Полноценый сайт магазин обуви с отправкой запросов на сервер и т д',
+            description: ['Интернет-магазин обуви, в котором реализованны функции: поиск по названию товара, выбор размера, количество единиц товара и удаление из корзины',
+                            'В данном проекте я использовал такие технологии как: Redux-toolkit, Redux-persist, TypeScript, сборщик Vite, axios',
+                            'Так же используется архитикта feature-Sliced Design для данного проекта'],
             deploy: 'https://maxx111.github.io/shoes_shop/',
             code: 'https://github.com/MaXx111/shoes_shop'
         },
@@ -24,7 +26,8 @@ export const data: ProjectProps[] = [
         id: 8,
         title: "Сервис по поиску фильмов",
         info: {
-            description: 'Обычный сервис с поиском фильмов и добавлением их в избранное',
+            description: ['Это был проект по взаимодействию с rest api и динамической отрисовки данных, которые приходят с сервера и их сохранения в избранном.',
+                           'Был использован TypeScript, React, Axios и Redux'],
             deploy: 'https://maxx111.github.io/favorite-films/',
             code: 'https://github.com/MaXx111/favorite-films'
         },
@@ -43,7 +46,9 @@ export const data: ProjectProps[] = [
         id: 9,
         title: "Cozy House",
         info: {
-            description: 'Последняя моя работа с версткой, получилось красиво и прикольно',
+            description: ['Моя работа для RSS, где было необходимо сверстать сайт для приюта животных только на HTML и СSS', 
+                        'Так как в ТЗ было указанно использовать только верстку и ванильный JS, то интересных технологий в данном проекте попробовать не удалось',
+                        'Реализованно переключение страниц, карусель и открытие карточек с животными. Дизайн адаптивный и отображается хорошо на всех устройствах'],
             deploy: 'https://maxx111.github.io/shelter_pets-site/',
             code: 'https://github.com/MaXx111/shelter_pets-site'
         },
@@ -53,7 +58,7 @@ export const data: ProjectProps[] = [
             html: true,
             css: true,
             react: false,
-            js: false,
+            js: true,
             ts: false,
             redux: false
         }
@@ -62,7 +67,8 @@ export const data: ProjectProps[] = [
         id: 2,
         title: "Retro Game",
         info: {
-            description: 'Моя не самая лучша работа, игра ретро и т д',
+            description: ['Моя работа, которую я указал в портфолио для того, что бы показать мой прогресс в программировании', 
+                            'Здесь я использовал исключительно ванильный JS без ничего'],
             deploy: 'https://maxx111.github.io/js-advanced-diploma/',
             code: 'https://github.com/MaXx111/js-advanced-diploma'
         },
@@ -81,7 +87,7 @@ export const data: ProjectProps[] = [
         id: 5,
         title: "Виртуальная клавиатура",
         info: {
-            description: 'Виртуальная клавиатура реализована только на английском языке',
+            description: ['Виртуальная клавиатура реализована только на английском языке'],
             deploy: 'https://maxx111.github.io/virtual-keyboard/',
             code: 'https://github.com/MaXx111/virtual-keyboard'
         },
@@ -100,7 +106,7 @@ export const data: ProjectProps[] = [
         id: 6,
         title: "Catalog на React",
         info: {
-            description: 'Моя первая работа на react',
+            description: ['Моя первая работа на react'],
             deploy: 'https://maxx111.github.io/events-state__filter/',
             code: 'https://github.com/MaXx111/events-state__filter'
         },
@@ -119,7 +125,7 @@ export const data: ProjectProps[] = [
         id: 10,
         title: "Minesweeper",
         info: {
-            description: 'Последняя работа(игра)',
+            description: ['Последняя работа(игра)'],
             deploy: 'https://maxx111.github.io/Minesweeper/',
             code: 'https://github.com/MaXx111/Minesweeper'
         },
@@ -138,7 +144,7 @@ export const data: ProjectProps[] = [
         id: 1,
         title: "NOEMI",
         info: {
-            description: 'Обычная верстка по макету без интерактива',
+            description: ['Обычная верстка по макету без интерактива'],
             deploy: 'https://maxx111.github.io/mq-diplom37/?#',
             code: 'https://github.com/MaXx111/mq-diplom37'
         },
@@ -157,7 +163,7 @@ export const data: ProjectProps[] = [
         id: 3,
         title: "Plants site",
         info: {
-            description: 'Обычная верстка, но и даже без адаптива',
+            description: ['Обычная верстка, но и даже без адаптива'],
             deploy: 'https://maxx111.github.io/plants_site/#',
             code: 'https://github.com/MaXx111/plants_site'
         },
@@ -176,7 +182,7 @@ export const data: ProjectProps[] = [
         id: 4,
         title: "Маленькая игра",
         info: {
-            description: 'Обычная старая маленькая игра, где нужно попасть по цели',
+            description: ['Обычная старая маленькая игра, где нужно попасть по цели'],
             deploy: 'https://maxx111.github.io/events-1-dz/',
             code: 'https://github.com/MaXx111/events-1-dz'
         },

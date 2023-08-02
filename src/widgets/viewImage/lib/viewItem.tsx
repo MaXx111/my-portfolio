@@ -66,7 +66,7 @@ export const ViewItem: React.FC<ViewItemProps> = ({item}) => {
             onClick={() => clickHandler(item.id)}
             style={{backgroundColor: color, cursor: cursor}}
             >
-                <span className="view-item-txt" >{item.title}</span>
+                <span className="view-item-txt Raleway-regular" >{item.title}</span>
             </div>
         </>
     )

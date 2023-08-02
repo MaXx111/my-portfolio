@@ -8,8 +8,8 @@ export const Projects: React.FC = () => {
         <>
             <div className="projects">
                 <div className="projects-header">
-                    <span className="projects-header_text">ПРОЕКТЫ</span>
-                    <span className="projects-header_text">ТЕХНОЛОГИИ</span>
+                    <span className="projects-header_text Raleway-regular">ПРОЕКТЫ</span>
+                    <span className="projects-header_text Raleway-regular">ТЕХНОЛОГИИ</span>
                 </div>
                 {data.map(item => <ProjectItem key={item.id} item={item}/>)}
             </div>

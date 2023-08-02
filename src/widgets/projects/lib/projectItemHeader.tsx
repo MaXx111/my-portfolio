@@ -50,7 +50,7 @@ const ProjectItemHeader: React.FC<ProjectItemHeaderProps> = ({project, color}) =
             onMouseEnter={() => enterHandler()}
             onMouseLeave={() => leaveHandler()}
             >
-                <h3 className="project-header_title">{project.title}</h3>
+                <h3 className="project-header_title Raleway-regular">{project.title}</h3>
                 <ul className="project-header_technologies">
                     {project.technologies.html &&  <HtmlIcon />}
                     {project.technologies.css &&  <CssIcon />}

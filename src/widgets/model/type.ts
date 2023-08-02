@@ -4,7 +4,7 @@ export interface ProjectProps {
     id: number,
     title: string,
     info: {
-        description: string,
+        description: string[],
         deploy: string,
         code: string
     },

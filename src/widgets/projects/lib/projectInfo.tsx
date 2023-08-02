@@ -1,7 +1,8 @@
+import { DescriptionItem } from "./descriptionItem"
 
 interface ProjectInfoProps {
     info: {
-            description: string,
+            description: string[],
             deploy: string,
             code: string
     },
@@ -13,13 +14,17 @@ export const ProjectInfo: React.FC<ProjectInfoProps> = ({info, color}) => {
     return(
             <>
                 <div className="info">
-                    <p className="info-description">{info.description}</p>
+                    {info.description.map(item => <DescriptionItem description={item}/>)}
                     <ul className="info-links">
                         <li className="list-item">
-                            <a href={info.deploy} className="list-item-link"><span style={{color: color}}>Deploy</span></a>
+                            <span className='list-item-txt Raleway-regular'>Ссылка на 
+                                <a href={info.deploy} style={{color: color}} className="list-item-link"> Deploy</a>
+                            </span>
                         </li>
                         <li className="list-item">
-                            <a href={info.code} className="list-item-link"><span style={{color: color}}>Code:</span></a>
+                            <span className='list-item-txt Raleway-regular'> Так же ссылка на 
+                                <a href={info.code} style={{color: color}} className="list-item-link"> code</a>
+                            </span>
                         </li>
                     </ul>
                 </div>

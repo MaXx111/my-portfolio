@@ -1,3 +1,27 @@
+@font-face {
+  font-family: 'Menlo';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../../public/fonts/Menlo-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../../public//fonts/Raleway/static/Raleway-Regular.ttf');
+}
+
+.Raleway-regular {
+  font-family: 'Raleway';
+  font-size: 16px;
+}
+
+.Menlo-regular {
+  font-family: 'Menlo';
+}
+
+
 body {
   margin: 0;
 }
@@ -128,13 +152,14 @@ body {
 }
 
 .info-description {
-  margin: 0;
-  padding: 0 0 0 30px;
+  margin: 0 0 3px 0;
+  text-indent: 25px;
 }
-
+.list-item-txt {
+  color: #000;
+}
 .list-item-link {
   text-decoration: none;
-  color: #000;
 }
 
 .bold {
